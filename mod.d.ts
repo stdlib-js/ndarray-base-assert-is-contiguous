@@ -1,7 +1,7 @@
-/**
+/*
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2021 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -16,16 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ArrayLike } from '@stdlib/types/array';
 
 /**
-* Determine if an array is contiguous.
+* Returns a boolean indicating if an array is contiguous.
 *
-* @module @stdlib/ndarray-base-assert-is-contiguous
+* @param shape - array shape
+* @param strides - stride array
+* @param offset - index offset
+* @returns boolean indicating if an array is contiguous
 *
 * @example
-* var isContiguous = require( '@stdlib/ndarray-base-assert-is-contiguous' );
-*
 * var shape = [ 2, 2 ];
 * var strides = [ 2, 1 ];
 * var offset = 0;
@@ -34,8 +39,6 @@
 * // returns true
 *
 * @example
-* var isContiguous = require( '@stdlib/ndarray-base-assert-is-contiguous' );
-*
 * var shape = [ 2, 2 ];
 * var strides = [ -2, 1 ];
 * var offset = 2;
@@ -44,8 +47,6 @@
 * // returns false
 *
 * @example
-* var isContiguous = require( '@stdlib/ndarray-base-assert-is-contiguous' );
-*
 * var shape = [ 2, 2 ];
 * var strides = [ 2, 2 ];
 * var offset = 0;
@@ -53,12 +54,9 @@
 * var bool = isContiguous( shape, strides, offset );
 * // returns false
 */
-
-// MODULES //
-
-var isContiguous = require( './main.js' );
+declare function isContiguous( shape: ArrayLike<number>, strides: ArrayLike<number>, offset: number ): boolean; // tslint-disable-line max-line-length
 
 
 // EXPORTS //
 
-module.exports = isContiguous;
+export = isContiguous;
