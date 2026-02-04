@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-contiguous",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Determine if an array is contiguous.",
   "license": "Apache-2.0",
   "author": {
@@ -39,8 +39,8 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-assert-is-single-segment-compatible": "^0.2.2",
-    "@stdlib/ndarray-base-iteration-order": "^0.2.2",
+    "@stdlib/ndarray-base-assert-is-single-segment-compatible": "^0.2.3",
+    "@stdlib/ndarray-base-iteration-order": "^0.2.3",
     "@stdlib/ndarray-dtypes": "^0.4.0",
     "@stdlib/types": "^0.4.3",
     "@stdlib/utils-library-manifest": "^0.2.3"
